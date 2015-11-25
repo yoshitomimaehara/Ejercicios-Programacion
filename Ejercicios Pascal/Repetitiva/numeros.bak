@@ -1,0 +1,16 @@
+program numeros;
+uses
+ crt;
+var
+ i,n:integer;
+begin
+ clrscr;
+ write('ingrese el numero');
+ read(n);
+ i:=1;
+ repeat
+  writeln(i);
+  i:=i+1;
+  until i=n;
+ readkey;
+ end.

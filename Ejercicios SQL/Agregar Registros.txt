@@ -1,0 +1,11 @@
+INSERT INTO pro_fut_esp(codprofut, nomprofut,lputil) VALUES ('PFES01', 'Plantillas Wordpress','PHP,CSS,HTML'),('PFES02','Distro Linux"Black Sirius"','Bash,Shell');
+
+
+
+
+
+
+
+
+
+

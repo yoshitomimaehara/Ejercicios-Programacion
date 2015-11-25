@@ -1,0 +1,1 @@
+los ejercicios fueron desarrollados en Free Pascal

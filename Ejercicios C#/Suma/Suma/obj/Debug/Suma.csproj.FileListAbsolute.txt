@@ -1,0 +1,5 @@
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\Suma\Suma\bin\Debug\Suma.exe
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\Suma\Suma\bin\Debug\Suma.pdb
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\Suma\Suma\obj\Debug\ResolveAssemblyReference.cache
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\Suma\Suma\obj\Debug\Suma.exe
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\Suma\Suma\obj\Debug\Suma.pdb

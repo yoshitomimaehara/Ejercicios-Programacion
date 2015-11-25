@@ -1,0 +1,76 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int n,i;
+clrscr();
+cout<<"Ingrese el numero de valores que desea almacenar en los vectores: "; cin>>n;
+cout<<"\n";
+float c[n],s,prom,scc;
+float d[n],su,prome,scd;
+s=0; scc=0; su=0; scd=0;
+
+for(i=1; i<=n;i++)
+{
+cout<<"Igrese el valor "<<i<<" del arreglo X: "; cin>>c[i]; cout<<"\n";
+cout<<"Igrese el valor "<<i<<" del arreglo Y: "; cin>>d[i]; cout<<"\n";
+}
+for(i=1; i<=n;i++)
+{
+s=s+c[i];
+su=su+d[i];
+}
+prom=s/5;
+prome=su/5;
+for(i=1; i<=n;i++)
+{
+scc=scc+((c[i]-prom)*(c[i]-prom));
+scd=scd+((d[i]-prome)*(d[i]-prome));
+}
+cout<<"La suma de cuadrados corregida del vector X es: "<<scc<<"\n";
+cout<<"La suma de cuadrados corregida del vector Y es: "<<scd<<"\n";
+
+float spc;
+spc=0;
+for(i=1; i<=n;i++)
+{
+spc=spc+((c[i]-prom)*(d[i]-prome));
+}
+cout<<"La suma de productos corregida de los vectores X e Y es: "<<spc<<"\n";
+
+float sumd, promsd,succd;
+sumd=0; succd=0;
+for(i=1; i<=n;i++)
+{
+sumd=sumd+(c[i]-d[i]);
+}
+promsd=sumd/5;
+for(i=1; i<=n;i++)
+{
+succd=succd+(((c[i]-d[i])-promsd)*((c[i]-d[i])-promsd));
+}
+cout<<"La suma de cuadrados corregida de la diferencia de los vectores X e Y es: "<<succd<<"\n";
+
+
+float sva,t1,t2;
+t1=0; t2=0;
+for(i=1; i<=n;i++)
+{
+if((c[i]-d[i])<0)
+t1=t1+((c[i]-d[i])*(-1));
+else
+t2=t2+(c[i]-d[i]);
+}
+sva=t1+t2;
+cout<<"La suma en valor absoluto de la diferencia de los vectores X e Y es: "<<sva<<"\n";
+
+float sumdis;
+sumdis=0;
+for(i=1; i<=n;i++)
+{
+sumdis=sumdis+((c[i]-d[i])*(c[i]-d[i]));
+}
+cout<<"La distancia de los vectores X e Y es: "<<sumdis;
+
+getch();
+}

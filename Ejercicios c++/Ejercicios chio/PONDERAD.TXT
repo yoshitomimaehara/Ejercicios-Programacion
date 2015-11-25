@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float pond,sum,totcred;
+float nota[100],credito[100];
+int i,num_cursos;
+sum=0; totcred=0;
+clrscr();
+cout<<"Ingrese el n£mero de cursos a evaluar: "; cin>>num_cursos; cout<<"\n";
+for(i=1; i<=num_cursos; i++)
+{
+cout<<i<<" "; cin>>nota[i]; cout<<" "; cin>>credito[i]; cout<<"\n";
+
+}
+for(i=1; i<=num_cursos; i++)
+{
+totcred=totcred+credito[i];
+sum=sum+(nota[i]*credito[i]);
+}
+pond=sum/totcred;
+cout<<"Tu ponderado es: "<<pond;
+getch();
+}
+

@@ -1,0 +1,39 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float c[12],s,prom,mayor;
+int i,sup,inf,mes;
+sup=0; inf=0; mayor=0; s=0;
+clrscr();
+for(i=1;i<=12; i++)
+{
+cout<<"Ingrese las toneladas de maiz cosechadas en el mes"<<i<<": "; cin>>c[12];
+cout<<"\n";
+}
+for(i=1;i<=12; i++)
+{
+s=s+c[i];
+}
+prom=s/12;
+cout<<"El promedio anual es:"<<prom<<"\n";
+for(i=1;i<=12; i++)
+{
+if(c[i]>=prom)
+sup=sup+1;
+else
+inf=inf+1;
+}
+cout<<"Tuvieron una cosecha superior al promedio anual "<<sup<<" meses";
+cout<<"\n"<<"Tuvieron una cosecha inferior al promedio anual "<<inf<<" meses"<<"\n";
+for(i=1;i<=12; i++)
+{
+if(c[i]>=mayor)
+{
+mayor=c[i];
+mes=i;
+}
+}
+cout<<"El mes con mayor cosecha es: "<<mes;
+getch();
+}

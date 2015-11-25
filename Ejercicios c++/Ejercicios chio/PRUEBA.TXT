@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float b[100][100];
+int i,j,n;
+clrscr();
+cout<<"ingrese el valor de n: "; cin>>n; cout<<"\n";
+for(i=1;i<=n;i++)
+for(j=1;j<=n;j++)
+{
+if(i!=j)
+{
+b[i][j]=0;
+}
+else if(i==j)
+{
+b[i][i]=1;
+}
+}
+for(i=1;i<=n;i++)
+for(j=1;j<=n;j++)
+{
+cout<<"El elemento "<<i<<" "<<j<<" : "<<b[i][j]<<"\n";
+}
+getch();
+}

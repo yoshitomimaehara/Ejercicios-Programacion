@@ -1,0 +1,78 @@
+#include <gandalf/common.h>
+#include <gandalf/linalg.h>
+#include <stdio.h>
+int main (){
+/* Declaramos las variables */
+int i, j;
+Gan_Matrix33 m33A, m33B, m33C;
+double dDetA, dDetB;
+float A[3][3];
+float B[3][3];
+/* Pedimos los datos por teclado */
+printf ("Introduzca los datos de la matriz A: \n");
+for (i=0;i<3;i++){
+for (j=0;j<3;j++){
+printf ("Introduzca A(%d,%d): ", i,j);
+scanf ("%g", &A[i][j]);
+}
+}
+printf ("Introduzca los datos de la matriz B: \n");
+for (i=0;i<3;i++){
+for (j=0;j<3;j++){
+printf ("Introduzca B(%d,%d): ", i,j);
+scanf ("%g", &B[i][j]);
+}
+}
+/* Definimos las matrices */
+gan_mat33_fill_q (&m33A,A[0][0], A[0][1], A[0][2], A[1][0],
+A[1][1], A[1][2], A[2][0], A[2][1], A[2][2]);
+gan_mat33_fill_q (&m33B, B[0][0], B[0][1], B[0][2], B[1][0],
+B[1][1], B[1][2], B[2][0], B[2][1], B[2][2]);
+printf ("\n");
+/* Escribimos por pantalla las matrices */
+gan_mat33_print (&m33A, "Matriz 1", 3, "%f");
+gan_mat33_print (&m33B, "Matriz 2", 3, "%f");
+printf ("\n");
+/* Sumamos y escribimos por pantalla el resultado */
+m33C = gan_mat33_add_s(&m33A, &m33B);
+gan_mat33_print (&m33C, "Suma", 3, "%f");
+printf ("\n");
+/* Restamos y escribimos por pantalla el resultado */
+m33C = gan_mat33_sub_s(&m33A, &m33B);
+gan_mat33_print(&m33C, "Resta", 3, "%f");
+printf ("\n");
+/* Multiplicamos y escribimos por pantalla el resultado */
+/* C = A*B */
+m33C = gan_mat33_rmultm33_s (&m33A, &m33B);
+gan_mat33_print(&m33C,"Multiplicaci´on", 3, "%f");
+printf ("\n");
+/* Hallamos el determinante de A y B y lo sacamos por pantalla */
+dDetA = gan_mat33_det_q (&m33A);
+printf ("El determinante es: %g\n", dDetA);
+dDetB = gan_mat33_det_q (&m33B);
+printf ("El determinante es: %g\n", dDetB);
+printf ("\n");
+/* Tasponemos las matrices A y B y lo sacamos por pantalla */
+gan_mat33_tpose_i(&m33A);
+gan_mat33_print(&m33A, "Transpuesta de A", 3, "%f");
+gan_mat33_tpose_i(&m33B);
+gan_mat33_print(&m33B, "Transpuesta de B", 3, "%f");
+printf ("\n");
+/* Invertimos las matrices A y B (si se pueden invertir, y
+sacamos el resultado por pantalla */
+gan_mat33_tpose_i(&m33A);
+if (dDetA!=0){
+gan_mat33_invert_i (&m33A);
+gan_mat33_print(&m33A, "Inversa de A", 3, "%f");
+} else {
+printf ("El determinante de A es 0, por lo que no se puede hallar su inversa. \n");
+}
+gan_mat33_tpose_i(&m33B);
+if (dDetB!=0){
+gan_mat33_invert_i (&m33B);
+gan_mat33_print(&m33B, "Inversa de B", 3, "%f");
+} else {
+printf ("El determinante de B es 0, por lo que no se puede hallar su inversa. \n");
+}
+return 0;
+}

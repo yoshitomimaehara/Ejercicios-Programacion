@@ -1,0 +1,2 @@
+ALTER TABLE pro_fin_list
+ADD FOREIGN KEY (nomprofin) REFERENCES pro_fin_esp(nomprofin)

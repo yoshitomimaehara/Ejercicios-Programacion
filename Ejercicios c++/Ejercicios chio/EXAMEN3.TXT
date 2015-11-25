@@ -1,0 +1,52 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float notas[30],s,porc_aprob,porc_desaprob,prom,max,min;
+int i,k,l,m,n;
+k=0; l=0; s=0; max=0; min=20; m=0; n=0;
+clrscr();
+cout<<"Ingrese los datos del arreglo: ";
+for(i=1;i<=30;i++)
+{
+cout<<i<<": "; cin>>notas[i]; cout<<"\n";
+}
+for(i=1;i<=30;i++)
+{
+s=s+notas[i];
+}
+for(i=1;i<=30;i++)
+{
+if(notas[i]>=10.5)
+k=k+1;
+else 
+l=l+1;
+}
+prom=s/30;
+porc_aprob=(k/30)*100;
+porc_desaprob=(l/30)*100;
+cout<<"El n£mero de aprobados es: "<<k<<"\n";
+cout<<"El n£mero de desaprobados es: "<<l<<"\n";
+cout<<"El promedio de las notas finales es: "<<prom<<"\n";
+cout<<"El porcentaje de aprobados es: "<<porc_aprob<<"\n";
+cout<<"El porcentaje de desaprobados es: "<<porc_desaprob<<"\n";
+for(i=1;i<=30;i++)
+{
+if(notas[i]>=max)
+max=notas[i];
+else if(notas[i]<=min)
+min=notas[i];
+}
+for(i=1;i<=30;i++)
+{
+if(notas[i]>prom)
+m=m+1;
+else if(notas[i]>8 && notas[i]<12)
+n=n+1;
+}
+cout<<"La nota final m xima es: "<<max<<"\n";
+cout<<"La nota final m¡nima es: "<<min<<"\n";
+cout<<"El n£mero de alumnos cuya nota final es superior al promedio es: "<<m<<"\n";
+cout<<"El n£mero de alumnos cuya nota se encuentra entre 8 y 12 es: "<<n;
+getch();
+}

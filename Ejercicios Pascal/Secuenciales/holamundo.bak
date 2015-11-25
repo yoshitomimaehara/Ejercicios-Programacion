@@ -1,0 +1,8 @@
+program hola(input,output);
+uses
+crt;
+
+BEGIN
+    Writeln('Hola Mundo');
+    readkey;
+END.

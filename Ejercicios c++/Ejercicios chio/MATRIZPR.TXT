@@ -1,0 +1,78 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float a[3][24],s,prom,tot_dep[24],promdep[24],mayor,menor,tot_niv[3],promniv[3],porc_dep[24],porc_niv[3];
+int i,j,depma,depme;
+s=0; mayor=0; menor=0;
+clrscr();
+cout<<"Ingrese los datos por nivel educativo y departamento. "<<" Nivel incial(1), primaria(2) y secundaria(3)"<<"\n";
+for(i=1;i<=3;i++)
+for(j=1;j<=24;j++)
+{
+cin>>a[i][j];
+}
+for(i=1;i<=3;i++)
+for(j=1;j<=24;j++)
+{
+s=s+a[i][j];
+}
+prom=s/(24*3);
+cout<<"El total de matriculados a nivel nacional es: "<<s<<"\n";
+cout<<"El promedio de alumnos matriculados a nivel nacional es: "<<prom<<"\n";
+cout<<"El total de alumnos por nivel es: "<<"\n";
+for(i=1;i<=3;i++) tot_niv[i]=0;
+for(i=1;i<=3;i++)
+for(j=1;j<=24;j++)
+{
+tot_niv[i]=tot_niv[i]+a[i][j];
+}
+cout<<"El total de alumnos por departamento es: "<<"\n";
+for(j=1;j<=24;j++) tot_dep[i]=0; mayor=0; menor=0;
+for(i=1;i<=3;i++)
+for(j=1;j<=24;j++)
+{
+tot_dep[j]=tot_dep[j]+a[i][j];
+
+ if(a[i][j]>mayor)
+ {
+ mayor=a[i][j];
+ depma=j;
+ }
+ if(a[i][j]<menor)
+ {
+ menor=a[i][j];
+ depme=j;
+ }
+}
+cout<<"El departamento con mayor numero de alumnos matriculados es: "<<depma<<"\n";
+cout<<"El departamento con menor numero de alumnos matriculados es: "<<depme<<"\n";
+cout<<"El promedio de alumnos por nivel y por departamento es:"<<"\n";
+for(i=1;i<=3;i++)
+for(j=1;j<=24;j++)
+{
+promdep[j]=tot_dep[j]/24;
+promniv[i]=tot_niv[i]/3;
+}
+cout<<"El porcentaje de alumnos matriculados por nivel y departamento es: "<<"\n";
+for(i=1;i<=3;i++)
+for(j=1;j<=24;j++)
+{
+porc_dep[j]=(tot_dep[j]/s)*100;
+porc_niv[i]=(tot_niv[i]/s)*100;
+}
+for(i=1;i<=3;i++)
+for(j=1;j<=24;j++)
+{
+cout<<"Nivel "<<i<<": "<<tot_niv[i]<<"\n";
+cout<<"Departamento "<<j<<": "<<tot_dep[j]<<"\n";
+cout<<"Nivel "<<i<<": "<<promniv[i]<<"\n";
+cout<<"Departamento "<<j<<": "<<promdep[j]<<"\n";
+cout<<"Nivel "<<i<<": "<<porc_dep[j]<<"\n";
+cout<<"Departamento "<<j<<": "<<porc_niv[i]<<"\n";
+}
+getch();
+}
+
+
+

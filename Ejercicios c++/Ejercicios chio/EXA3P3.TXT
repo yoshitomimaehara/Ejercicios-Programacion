@@ -1,0 +1,32 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float a[100],x;
+int i,n,k,hallar;
+hallar=1;
+clrscr();
+cout<<"Ingrese el n£mero de datos que desea que tenga el arreglo: "; cin>>n;
+cout<<"\n"<<"Ingrese el dato que desea buscar: "; cin>>x;
+cout<<"\n"<<"Ingrese los datos del arreglo: "<<"\n";
+for(i=1;i<=n;i++)
+{
+cout<<i<<" : "; cin>>a[i];
+}
+i=1;
+while(i<=n && hallar==1)
+{
+if(a[i]==x)
+{
+hallar=2;
+k=i;
+}
+else
+i=i+1;
+}
+if(hallar==1)
+cout<<"El valor de x no existe en el arreglo";
+else
+cout<<"El valor de x se encuentra en la posici¢n: "<<k;
+getch();
+}

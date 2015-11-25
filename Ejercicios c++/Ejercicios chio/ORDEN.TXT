@@ -1,0 +1,29 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float a[2][3],tempo;
+int i,j;
+for(i=1;i<=2;i++)
+for(j=1;j<=3;j++)
+{
+cout<<i<<" "<<j<<" : "; cin>>a[i][j]; cout<<"\n";
+}
+for(i=1;i<=2;i++)
+for(j=1;j<=3;j++)
+{
+if(a[i][j]>a[i][j+1])
+{
+tempo=a[i][j];
+a[i][j]=a[i][j+1];
+a[i][j+1]=tempo;
+}
+}
+for(i=1;i<=2;i++)
+for(j=1;j<=3;j++)
+{
+cout<<i<<" "<<j<<" : "<<a[i][j]<<"\n";
+}
+
+getch();
+}

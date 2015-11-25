@@ -1,0 +1,17 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int n,b,F;
+b=0; F=1;
+clrscr();
+cout<<"Ingrese el n£mero del factorial que desea calcular: "; cin>>n;
+do
+{
+b=b+1;
+F=F*b;
+}
+while(b<n);
+cout<<"El factorial de n es: "<<F;
+getch();
+}

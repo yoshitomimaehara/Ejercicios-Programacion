@@ -1,0 +1,55 @@
+#define nmax 50
+#include <stdio.h>
+void cls(void);
+main()
+{
+int f, c, i, j, k, l, n, p, lg, fil[nmax], col[nmax];
+float det, a[nmax][nmax], aaux[nmax][nmax], b[nmax][nmax];
+// Lectura de datos
+cls();
+printf("\n\n\t\t\t\t\tInversa de una matriz de orden n\n");
+// Lectura de datos.
+printf("\n\t\t\t\t\tDigitar el orden de la matiz: ");
+scanf("%d", &n);
+while ( n <= 0 || n > nmax )
+{ printf("\t\tEl orden de la matriz debe ser entero, positivo y menor que %d, digite nuevamente: ", nmax);
+scanf("%d", &n); }
+for ( i = 0; i < n; i++ )
+{ printf("\n");
+for (j = 0; j < n; j++ )
+{ printf("\t\t\tDigitar la componente a[%d][%d]: ", i, j);
+scanf("%f", &a[i][j]);
+aaux[i][j] = a[i][j];
+b[i][j] = 0; }
+fil[i] = -1;
+col[i] = -1;
+b[i][i] = 1; }
+// Búsqueda del pivot a[f][c]. lg = 1 cuando encuentra un pivot.
+l = -1;
+for ( c = 0; c < n; c++ )
+{ f = -1;
+lg = 0;
+while ( f < n - 1 && lg == 0 )
+{ f++;
+if ( a[f][c] != 0 )
+{ k = 0;
+while ( k <= l && fil[k] != f )
+{ k++; }
+if ( k > l )
+{ lg = 1;
+l++;
+fil[l] = f;
+col[l] = c; } } }
+// Triangularización. lg = 1 si encontró un pivot.
+if ( lg == 1 )
+{ for ( i = 0; i < n; i++ )
+{ k = 0;
+while ( k <= l && fil[k] != i )
+{ k++; }
+if ( k > l )
+{ for ( j = c + 1; j < n; j++ )
+{ a[i][j] = a[i][j]*a[f][c] - a[i][c]*a[f][j]; }
+for ( j = 0; j < n; j++ )
+{ b[i][j] = b[i][j]*a[f][c] - a[i][c]*b[f][j]; }
+a[i][c] = 0;
+}}}}

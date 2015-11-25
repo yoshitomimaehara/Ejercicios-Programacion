@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int s,i;
+ s=0;
+clrscr();
+for(i=0;i<=20;i=i+2)
+{
+s=s+i;
+}
+cout<<"La suma de los pares de los numeros pares es:"<<s;
+getch();
+}

@@ -1,0 +1,2 @@
+ALTER TABLE `web_personal`.`pro_can_sus`
+ RENAME TO `pro_can_sus_esp`;

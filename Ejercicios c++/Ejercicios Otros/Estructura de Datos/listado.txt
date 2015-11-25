@@ -1,0 +1,4 @@
+codigo	nombre	sueldo	afp	total
+
+********************123	puto	123	13.53	109.47
+145	moto	156	17.16	138.84

@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int i,s;
+ s=0;
+clrscr();
+for(i=1;i<=20;i++)
+{
+s=s+(i*i);
+}
+cout<<"La suma  de los cuadrados que 20 es:"<<s;
+getch();
+}

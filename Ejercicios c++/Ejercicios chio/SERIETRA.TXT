@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int n,i,j,facto,d;
+float x,c,Q,pot;
+i=0; j=0; facto=1; Q=0;  pot=1;
+clrscr();
+cout<<"Ingrese el valor de n: "; cin>>n;
+cout<<"Ingrese el valor de x: "; cin>>x;
+while(i<n)
+{
+i=i+1;
+facto=facto*i;
+while(j<i)
+{
+j=j+1;
+pot=pot*x;
+}
+c=pot;
+d=facto;
+Q=Q+(d/c);
+}
+cout<<"El valor de la serie es: "<<Q;
+getch();
+}

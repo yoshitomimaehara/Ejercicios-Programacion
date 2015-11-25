@@ -1,0 +1,30 @@
+//permite eliminar un dato de la posici¢n k de un arreglo la posicion es ingresada por teclado//
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float A[100];
+int i,k,n;
+clrscr();
+cout<<"Ingrese la dimensi¢n que desea que tenga el arreglo: "; cin>>n; cout<<"\n";
+cout<<"Ingrese la posici¢n del dato que desea eliminar: "; cin>>k; cout<<"\n";
+if(n>=k)
+{
+ for(i=1; i<=n;i++)
+ {
+ cout<<"Ingrese el dato "<<i<<" : "; cin>>A[i];
+ }
+  for(i=k;i<=n-1;i++)
+  {
+  A[i]=A[i+1];
+  }
+
+   for(i=1;i<=(n-1);i++)
+   {
+   cout<<"El valor de "<<i<<"es: "<<A[i]<<"\n";
+   }
+}
+else
+ cout<<"La posici¢n debe ser menor a la dimensi¢n del arreglo";
+getch();
+}

@@ -1,0 +1,58 @@
+CREATE TABLE pro_fut_esp(
+ codprofut VARCHAR(6),
+ nomprofut VARCHAR(255),
+ lputil    VARCHAR(255),
+PRIMARY KEY(codprofut)
+);
+
+CREATE TABLE pro_fin_esp(
+ codprofin VARCHAR(6),
+ nomprofin VARCHAR(255),
+ lputil    VARCHAR(255), 
+PRIMARY KEY(codprofin)
+);
+
+CREATE TABLE pro_act_esp(
+ codproact VARCHAR(6),
+ nomproact VARCHAR(255), 
+ lputil    VARCHAR(255),
+ clientact VARCHAR(255), 
+PRIMARY KEY(codproact)
+);
+
+CREATE TABLE pro_can_sus_esp(
+ codprocansus VARCHAR(6),
+ nomprocansus VARCHAR(255), 
+ razonprocansus VARCHAR(255),
+PRIMARY KEY(codprocansus)
+);
+
+CREATE TABLE pro_fut_list(
+ codprofut VARCHAR(6),
+ nomprofut VARCHAR(255),
+PRIMARY KEY(codprofut)
+);
+
+CREATE TABLE pro_act_list(
+ codproact VARCHAR(6),
+ nomproact VARCHAR(255),
+PRIMARY KEY(codproact)
+);
+
+CREATE TABLE pro_fin_list(
+ codprofin VARCHAR(6),
+ nomprofin VARCHAR(255),
+PRIMARY KEY(codprofin)
+);
+
+CREATE TABLE pro_can_sus_list(
+ codprocansus VARCHAR(6),
+ nomprocansus VARCHAR(255),
+PRIMARY KEY(codprocansus)
+);
+
+CREATE TABLE noticias(
+ codnot VARCHAR(6),
+ nomnot VARCHAR(255),
+PRIMARY KEY(codnot)
+);

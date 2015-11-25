@@ -1,0 +1,5 @@
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\PrimeraAplicacion\PrimeraAplicacion\bin\Debug\PrimeraAplicacion.exe
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\PrimeraAplicacion\PrimeraAplicacion\bin\Debug\PrimeraAplicacion.pdb
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\ResolveAssemblyReference.cache
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\PrimeraAplicacion.exe
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios C#\PrimeraAplicacion\PrimeraAplicacion\obj\Debug\PrimeraAplicacion.pdb

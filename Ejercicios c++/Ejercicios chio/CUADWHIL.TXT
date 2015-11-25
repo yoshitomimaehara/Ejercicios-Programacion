@@ -1,0 +1,16 @@
+
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int i,s;
+i=0; s=0;
+clrscr();
+while(i<20)
+{
+i=i+1;
+s=s+(i*i);
+}
+cout<<"La suma  de cuadrados menores que 20 es:"<<s;
+getch();
+}

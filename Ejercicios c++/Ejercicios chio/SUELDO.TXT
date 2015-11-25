@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int n;
+float s,max;
+max=0;
+while(n>0)
+{
+cout<<"Ingrese el n£mero del trabajador"; cin>>n;
+cout<<"Ingrese el sueldo del trabajador"; cin>>s;
+if(s>max)
+{
+max=s;
+}
+if(n==0)
+{
+s=s*0;
+}
+}
+cout<<"El n£mero del trabajador con mayor sueldo es:"<<n;
+cout<<"Su sueldo es:"<<s;
+getch();
+}
+

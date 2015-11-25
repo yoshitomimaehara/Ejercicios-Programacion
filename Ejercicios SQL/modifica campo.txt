@@ -1,0 +1,1 @@
+ALTER TABLE noticias MODIFY fecnot DateTime;

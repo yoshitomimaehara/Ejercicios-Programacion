@@ -1,0 +1,33 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float A[100],x;
+int i,n,pos,j;
+j=0;
+clrscr();
+cout<<"Ingrese el tama¤o que desea que tenga el arreglo: "; cin>>n;
+cout<<"Ingrese el dato que desea buscar: "; cin>>x;
+for(i=1; i<=n;i++)
+{
+cout<<"Ingrese el dato n£mero "<<i<<" : "; cin>>A[i];
+}
+for(i=1; i<=n;i++)
+{
+ if(A[i]==x)
+ {
+ pos=i;
+ cout<<"Se encuentra en la posici¢n: "<<pos<<"\n";
+ }
+ else if(A[i]!=x)
+ {
+ j=j+1;
+ }
+}
+if(j==n)
+{
+cout<<"El dato no se encuentra en el vector";
+}
+getch();
+}
+ 

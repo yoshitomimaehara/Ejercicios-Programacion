@@ -1,0 +1,53 @@
+<!--se renombra por index.html-->
+<html>
+	<head>
+		<script type="text/javascript">
+		function ejecutarajax(){
+			var conexion;
+			//XMLhttpRequest ese el objeto clave de Ajax
+			if (window.XMLHttpRequest)			  {
+			  conexion=new XMLHttpRequest();//para navegadores actuales
+			}else
+			  {
+			  conexion=new ActiveXObject("Microsoft.XMLHTTP");//para navegadores antiguos
+			}
+			//sirve para obtener respuesta del servidor
+			conexion.onreadystatechange=function(){
+				if(conexion.readyState==4 && conexion.status==200){
+					document.getElementById("midiv").innerHTML=conexion.responseText;
+					/*
+						Readystate.-
+						0:la peticion no se ha iniciado
+						1:conexion con el servidor establecida
+						2:Peticion recibida
+						3:procesando peticion
+						4:peticion finalizada y respuesta esta lista
+						
+						Status.-
+						200:Ok
+						404:Pagina no encontrada
+					*/
+				}
+			}
+			/*
+			  Asincronica:sirve para soportar multiples peticiones
+			  Sincronica:sirve para pocas conexiones
+			*/
+			//abre conexion
+			conexion.open("GET","ejemplo.txt",true);
+			/*
+			GET:Simple y Mas Rapido pero hay limitaciones
+			POST:no hay limitaciones de tamaño,es mucho mejor cuando enviamos por formulario
+				cuando un usuario ingresa informacion
+			*/
+			//peticion al servidor
+			conexion.send();
+		}
+		</script>
+	</head>
+	<body>
+		<div id="midiv"></div>
+		<button type="button" onclick="ejecutarajax()">Ejecutar</button>
+	</body>
+</html>
+

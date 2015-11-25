@@ -1,0 +1,18 @@
+#include<fstream.h>
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int v1,v2,v3,vent_tot;
+vent_tot=0;
+clrscr();
+fstream archi("venta.dat",ios::in);
+while(!archi.eof())
+{
+archi>>v1>>v2>>v3; cout<<"\n";
+vent_tot=vent_tot+(v1+v2+v3);
+}
+cout<<"Venta total="<<vent_tot;
+archi.close();
+getch();
+}

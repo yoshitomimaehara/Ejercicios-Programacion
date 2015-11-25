@@ -1,0 +1,31 @@
+Program Trapecio;
+uses crt;
+
+function f(x:real):real;
+
+begin
+ f:=x*x;
+end;
+
+var
+ i,a,b,h,x:real;
+ n,k,j    :integer;
+begin
+ clrscr;
+ gotoxy(10,10);
+ writeln('de los extremos del intervalo u numero de divisiones');
+ readln(a,b,n);
+ h:=(b-a)/n;
+ i:=(f(a)+f(b))/2;
+ K:=n-1; x:=a;
+ for j:=1 to k do
+ begin
+  x:=x+h;
+  i:=i+f(x);
+ end;
+ i:=i*h; gotoxy(10,15);
+ writeln('integral hallada',i:0:5);
+ writeln;writeln('divisiones :',n:4);
+ writeln;writeln('pulse[enter] para continuar');
+ repeat until keypressed;
+end.

@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int r,a,b;
+a=1;
+clrscr();
+while(a<=12)
+{
+cout<<"Tabla de multiplicar del "<<a<<"\n";
+for(b=0;b<=12; b++)
+{
+r=a*b;
+cout<<b<<"x"<<a<<"="<<r<<"\n";
+}
+a=a+1;
+}
+getch();
+}
+
+

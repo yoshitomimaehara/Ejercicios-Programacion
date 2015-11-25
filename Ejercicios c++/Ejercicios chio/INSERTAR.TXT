@@ -1,0 +1,103 @@
+//permite insertar un dato x en una posici¢n k de un arreglo la posicion y el dato son ingresados por teclado//
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float A[100],x;
+int i,k,n;
+clrscr();
+cout<<"Ingrese la dimensi¢n que desea que tenga el arreglo: "; cin>>n; cout<<"\n";
+cout<<"Ingrese la posici¢n donde desea insertar el dato: "; cin>>k; cout<<"\n";
+if(n>=k)
+{
+ cout<<"Ingrese el valor de x: "; cin>>x; cout<<"\n";
+ for(i=1; i<=n;i++)
+ {
+ cout<<"Ingrese el dato "<<i<<" : "; cin>>A[i];
+ }
+  for(i=n;i>=1;i=i-1)
+  {
+  A[i+1]=A[i];
+	if(i<k)
+	{
+	A[k]=x;
+	}
+  }
+   for(i=1;i<=(n+1);i++)
+   {
+   cout<<"El valor de "<<i<<"es: "<<A[i]<<"\n";
+   }
+}
+else
+ cout<<"La posici¢n debe ser menor a la dimensi¢n del arreglo";
+getch();
+}
+
+//permite eliminar un dato de la posici¢n k de un arreglo la posicion es ingresada por teclado//
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float A[100];
+int i,k,n;
+clrscr();
+cout<<"Ingrese la dimensi¢n que desea que tenga el arreglo: "; cin>>n; cout<<"\n";
+cout<<"Ingrese la posici¢n del dato que desea eliminar: "; cin>>k; cout<<"\n";
+if(n>=k)
+{
+ for(i=1; i<=n;i++)
+ {
+ cout<<"Ingrese el dato "<<i<<" : "; cin>>A[i];
+ }
+  for(i=k;i<=n-1;i++)
+  {
+  A[i]=A[i+1];
+  }
+
+   for(i=1;i<=(n-1);i++)
+   {
+   cout<<"El valor de "<<i<<"es: "<<A[i]<<"\n";
+   }
+}
+else
+ cout<<"La posici¢n debe ser menor a la dimensi¢n del arreglo";
+getch();
+}
+
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float A[100][100],B[100][100],P[100][100];
+int i,j,n,m,p,k;
+clrscr();
+cout<<"Ingrese el n£mero de filas de la primera matriz: "; cin>>m; cout<<"\n";
+cout<<"Ingrese el n£mero de columnas de la primera matriz: "; cin>>n; cout<<"\n";
+cout<<"Ingrese el n£mero de columnas de la segunda matriz: "; cin>>p; cout<<"\n";
+cout<<"Ingrese los elementos de la primera matriz"<<"\n";
+for(i=1;i<=m;i++)
+for(j=1;j<=n;j++)
+{
+cout<<"Ingrese el elemnto "<<i<<" "<<j<<" : "; cin>>A[i][j]; cout<<"\n";
+}
+cout<<"Ingrese los elementos de la segunda matriz"<<"\n";
+for(i=1;i<=n;i++)
+for(j=1;j<=p;j++)
+{
+cout<<"Ingrese el elemento "<<i<<" "<<j<<" : "; cin>>B[i][j]; cout<<"\n";
+}
+for(i=1;i<=m;i++)
+for(j=1;j<=p;j++)
+{
+P[i][j]=0;
+for(k=1; k<=n;k++)
+P[i][j]=P[i][j]+(A[i][k]*B[k][j]);
+}
+for(i=1;i<=m;i++)
+for(j=1;j<=p;j++)
+{
+cout<<"El elemento "<<i<<" "<<j<<" : "<<P[i][j]<<"\n";
+}
+getch();
+}
+

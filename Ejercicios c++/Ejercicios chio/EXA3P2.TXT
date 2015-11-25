@@ -1,0 +1,45 @@
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+main()
+{
+float norte[15],sur[15],s,s1,prom_nor,prom_sur,scn,scs,varn,vars,desn,dess,porc,prom_nor1,prom_sur1;
+int i,n;
+clrscr();
+cout<<"Ingrese las ventas la la sucursal norte y sur:"<<"\n";
+for(i=1;i<=15;i++)
+{
+cout<<"D¡a "<<i<<" : "; cin>>norte[i]; cout<<"\n";
+cout<<"D¡a "<<i<<" : "; cin>>sur[i]; cout<<"\n";
+}
+for(i=1;i<=15;i++)
+{
+s=s+norte[i];
+scn=scn+(norte[i]*norte[i]);
+s1=s1+sur[i];
+scs=scs+(sur[i]*sur[i]);
+}
+prom_nor=s/15;
+prom_sur=s1/15;
+varn=(scn-(15*prom_nor*prom_nor))/14;
+vars=(scs-(15*prom_sur*prom_sur))/14;
+desn=sqrt(varn);
+dess=sqrt(vars);
+cout<<"El promedio de ventas de la sucursal norte es: "<<prom_nor<<"\n";
+cout<<"El promedio de ventas de la sucursal sur es: "<<prom_sur<<"\n";
+cout<<"La desviaci¢n estandar de la sucursal norte es: "<<desn<<"\n";
+cout<<"La desviaci¢n estandar de la sucursal sur es: "<<dess<<"\n";
+for(i=1;i<=15;i++)
+{
+if(sur[i]>norte[i])
+n=n+1;
+}
+porc=(n/15)*100;
+prom_nor1=1.25*prom_nor;
+prom_sur1=0.98*prom_sur;
+cout<<"El n£mero y porcentaje de d¡as en que las ventas de la sucursal sur supera a la norte es: "<<n<<" "<<porc<<"\n";
+cout<<"El nuevo promedio de la sucursal norte es: "<<prom_nor1<<"\n";
+cout<<"El nuevo promedio de la sucursal sur es: "<<prom_sur1<<"\n";
+getch();
+}
+

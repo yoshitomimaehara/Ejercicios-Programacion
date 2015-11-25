@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float A[100][100],B[100][100];
+int i,j,n,m;
+clrscr();
+cout<<"Ingrese el n£mero de filas: "; cin>>n; cout<<"\n";
+cout<<"Ingrese el n£mero de columnas: "; cin>>m; cout<<"\n";
+cout<<"Ingrese los elemntos de la matriz"<<"\n";
+for(i=1;i<=n;i++)
+for(j=1;j<=m;j++)
+{
+cout<<"Ingrese el elemnto "<<i<<" "<<j<<" : "; cin>>A[i][j]; cout<<"\n";
+}
+for(i=1;i<=n;i++)
+for(j=1;j<=m;j++)
+{
+B[j][i]=A[i][j];
+}
+for(i=1;i<=m;i++)
+for(j=1;j<=n;j++)
+{
+cout<<"El elemento "<<i<<" "<<j<<" : "<<B[i][j]<<"\n";
+}
+getch();
+}

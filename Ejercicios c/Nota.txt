@@ -1,0 +1,2 @@
+la mayoria de los ejercicios estan hechoes dev c++ 
+uno que otro puede estar hecho en mingw

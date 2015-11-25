@@ -1,0 +1,22 @@
+program trimestre;
+uses
+ crt;
+var
+ mes:longint;
+begin
+ write('ingrese el mes:');
+ readln(mes);
+ if (mes>0) and (mes<13) then
+  begin
+  case mes of
+    1..3: writeln('Primer Trimestre');
+    4..6:writeln('Segundo Trimestre');
+    7..9:writeln('Tercer Trimestre');
+    10..12:writeln('Cuarto Trimestre');
+  end;
+ end
+ else
+  begin
+  writeln('Error en ingreso de mes!!');
+  end;
+ end.

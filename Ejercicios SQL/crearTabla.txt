@@ -1,0 +1,6 @@
+CREATE TABLE pro_fut_esp(
+ codprofut VARCHAR(6),
+ nomprofur VARCHAR(255),
+ lputil    VARCHAR(255),
+PRIMARY KEY(codprofut)
+)

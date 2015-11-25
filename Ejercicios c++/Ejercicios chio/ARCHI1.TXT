@@ -1,0 +1,38 @@
+#include<fstream.h>
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int v1,v2,v3;
+fstream archi("venta.dat",ios::out);
+cout<<"Ingrese las ventas de los tres productos"<<"\n";
+v1=1;
+while(v1>0)
+{
+cout<<"Producto1: "; cin>>v1;
+cout<<"Producto2:"; cin>>v2;
+cout<<"Producto3:"; cin>>v3;
+if(v1>0)
+archi<<v1<<v2<<v3<<"\n"; archi.close();
+}
+getch();
+}
+
+#include<fstream.h>
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int v1,v2,v3,vent_tot;
+vent_tot=0;
+clrscr();
+fstream archi("venta.dat",ios::in);
+while(!archi.eof())
+{
+archi>>v1>>v2>>v3; cout<<"\n";
+vent_tot=vent_tot+(v1+v2+v3);
+}
+cout<<"Venta total="<<vent_tot;
+archi.close();
+getch();
+}

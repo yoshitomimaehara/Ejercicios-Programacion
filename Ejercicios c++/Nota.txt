@@ -1,0 +1,3 @@
+La mayoria de ejercicios fueron desarrollados en dev c++ 
+a excepcion de algunos de ejercicios BUP hechos en MinGW
+y ejercicios de chio hecho en Turbo c++

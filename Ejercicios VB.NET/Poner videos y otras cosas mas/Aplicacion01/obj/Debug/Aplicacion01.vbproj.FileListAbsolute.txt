@@ -1,0 +1,15 @@
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\bin\Debug\Aplicacion01.exe
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\bin\Debug\Aplicacion01.pdb
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\bin\Debug\Aplicacion01.xml
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\bin\Debug\Interop.WMPLib.dll
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\bin\Debug\AxInterop.WMPLib.dll
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\ResolveAssemblyReference.cache
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\Interop.WMPLib.dll
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\AxInterop.WMPLib.dll
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\Aplicacion01.vbproj.ResolveComReference.cache
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\Aplicacion01.Form1.resources
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\Aplicacion01.Resources.resources
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\Aplicacion01.vbproj.GenerateResource.Cache
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\Aplicacion01.exe
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\Aplicacion01.xml
+D:\Usb\Kazejin2004\Ejercicios Programacion\Ejercicios VB.NET\Poner videos y otras cosas mas\Aplicacion01\obj\Debug\Aplicacion01.pdb

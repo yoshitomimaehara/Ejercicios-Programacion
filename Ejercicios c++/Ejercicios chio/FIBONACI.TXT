@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int prim,seg,sig,i,n;
+prim=0; seg=1; i=2;
+clrscr();
+cout<<"Ingrese la posici¢n del numero que desea encontrar: "; cin>>n;
+if(n>2)
+{
+while(i<n)
+{
+sig=prim+seg;
+prim=seg;
+seg=sig;
+i=i+1;
+}
+if(i==n)
+{
+cout<<"El numero que se encuentra en la posici¢n "<<n<<" es: "<<sig;
+}
+}
+getch();
+}

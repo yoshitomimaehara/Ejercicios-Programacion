@@ -1,0 +1,15 @@
+PROGRAM operation(input,output);
+uses
+ crt;
+var
+n:integer;
+o:integer;
+begin
+ clrscr;
+ write('ingrese el numero:');
+ readln(n);
+ o:=3*n;
+ writeln(o);
+ readkey;
+ clrscr
+end.

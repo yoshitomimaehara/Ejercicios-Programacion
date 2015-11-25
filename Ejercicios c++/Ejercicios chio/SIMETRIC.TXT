@@ -1,0 +1,27 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+float A[100][100];
+int i,j,n,k;
+k=0;
+clrscr();
+cout<<"Ingrese el valor de n: "; cin>>n; cout<<"\n";
+cout<<"Ingrese los elemntos de la matriz"<<"\n";
+for(i=1;i<=n;i++)
+for(j=1;j<=n;j++)
+{
+cout<<"Ingrese el elemnto "<<i<<" "<<j<<" : "; cin>>A[i][j]; cout<<"\n";
+}
+for(i=1;i<=n;i++)
+for(j=1;j<=n;j++)
+{
+if(A[i][j]==A[j][i])
+k=k+1;
+}
+if(k==n*n)
+cout<<"La matriz es sim‚trica";
+else
+cout<<"No es sim‚trica";
+getch();
+}

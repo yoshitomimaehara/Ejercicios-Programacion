@@ -1,0 +1,1 @@
+UPDATE `web_personal`.`pro_act_esp` SET `codproact` = 'PAES01' WHERE `pro_act_esp`.`codproact` = 'PAES02';

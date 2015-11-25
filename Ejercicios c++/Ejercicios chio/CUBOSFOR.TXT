@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+main()
+{
+int i,s;
+ s=0;
+clrscr();
+for(i=1;i<=20;i++)
+{
+s=s+(i*i*i);
+}
+cout<<"La suma  de cubos menores que 20 es:"<<s;
+getch();
+}
