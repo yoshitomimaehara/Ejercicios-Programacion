@@ -7,3 +7,6 @@
 - **Ejercicios VC++:** Son ejercicios hechos en Visual C++ 2008
 - **Ejercicios chio:** es una coleccion de ejercicios hechos por mi hermana en Borland C++ 3.0
 - **Ejercicios jutge:** Son las soluciones a algunos problemas que estan en la pagina de este juez
+
+La mayoria de ejercicios fueron desarrollados en Dev C++ a excepcion de algunos de ejercicios BUP desarrollados en MinGW 
+y ejercicios chio desarrollados en Turbo C++
